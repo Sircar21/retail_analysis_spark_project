@@ -48,6 +48,7 @@ def main(job_run_env):
         logger.info("Spark Session stopped")
 
 if __name__ == "__main__":
+    print("Entered to the applications pyspark_project")
     if len(sys.argv) < 2:
         logger.error("Please specify the environment")
         sys.exit(-1)
@@ -55,3 +56,5 @@ if __name__ == "__main__":
     job_run_env = sys.argv[1]
     print(f"Job run environment: {job_run_env}")
     main(job_run_env)
+
+
